@@ -13,13 +13,7 @@ public class Partition_Labels {
             int rightmost=Integer.MIN_VALUE;
             int start_point = 0;
             for(int i = 0; i< S.length();i++){
-                if(hashmap.containsKey(S.charAt(i))){
-                    if(hashmap.get(S.charAt(i)) < i){
-                        hashmap.put(S.charAt(i),i);
-                    }
-                }else{
-                    hashmap.put(S.charAt(i),i);
-                }
+                hashmap.put(S.charAt(i),i);
             }
             for(int i = 0; i < S.length();i++){
                 char ch = S.charAt(i);
