@@ -26,6 +26,7 @@ class Merge_intervals{
         }
         res.add(new int[]{start, end});
         return res.toArray(new int[0][]);
+        //return res.toArray(new int[result.size()][]);
 
     }
 
